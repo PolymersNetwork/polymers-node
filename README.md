@@ -65,7 +65,7 @@ Polymers Node is part of a **larger DePIN + Blockchain ecosystem**, bridging IoT
 ## 📁 Folder Structure
 
 ```text
-packages/backend/
+backend/
 ├─ src/
 │  ├─ index.ts             # Node entrypoint
 │  ├─ routes/
