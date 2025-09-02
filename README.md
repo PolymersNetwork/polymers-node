@@ -1,4 +1,4 @@
-# 🌐 Polymers Node – IoT Validator & Reward Engine
+# <span style="color:#00AEEF">🌐 Polymers Node – IoT Validator & Reward Engine</span>
 
 ![Polymers Badge](https://img.shields.io/badge/Polymers-Network-00AEEF?style=for-the-badge&logo=vercel&logoColor=white)
 ![Status Badge](https://img.shields.io/badge/Status-Production--Ready-28A745?style=for-the-badge&logo=github)
@@ -12,7 +12,7 @@ It validates recycling events, executes **AI contamination scoring**, orchestrat
 
 ---
 
-## 🚀 Key Features
+## <span style="color:#00AEEF">🚀 Key Features</span>
 
 ✨ **IoT Event Capture** – Real-time events from smart bins, sensors, and cameras  
 🧠 **AI Contamination Scoring** – Detect contamination and compute cleaned area contribution  
@@ -26,7 +26,66 @@ It validates recycling events, executes **AI contamination scoring**, orchestrat
 
 ---
 
-## 🏗 Node Architecture
+## <span style="color:#00AEEF">⚙️ Prerequisites</span>
+
+- Node.js **>= 18**  
+- Docker & Docker Compose  
+- Solana & SUI wallets for NFT & reward execution  
+- AI model files for contamination scoring  
+
+---
+
+## <span style="color:#00AEEF">💻 Local Development</span>
+
+1️⃣ Install dependencies  
+
+```bash
+cd backend
+pnpm install
+````
+
+2️⃣ Configure environment variables
+
+```bash
+cp .env.example .env
+```
+
+3️⃣ Start node locally
+
+```bash
+npm run dev
+```
+
+---
+
+## <span style="color:#00AEEF">🏭 Production Deployment with Docker</span>
+
+The backend API and WebSocket server are fully containerized.
+
+### 1️⃣ Build & Run with Docker Compose
+
+```bash
+docker-compose up --build
+```
+
+* **Backend API:** `http://localhost:4000/api/scan`
+* **WebSocket:** `ws://localhost:4001`
+
+### 2️⃣ Detached Mode
+
+```bash
+docker-compose up -d --build
+```
+
+### 3️⃣ Notes
+
+* `.env` is loaded from `backend/.env`
+* Ports `4000` (API) and `4001` (WebSocket) correspond to services
+* Volumes allow hot reload during development; remove for production
+
+---
+
+## <span style="color:#00AEEF">🏗 Node Architecture</span>
 
 ```text
 IoT Smart Bins → Polymers Node
@@ -42,27 +101,27 @@ IoT Smart Bins → Polymers Node
    │               └─ Blockchain Programs (Solana + SUI)
    │
    └─ WebSocket → Dashboard / Analytics
-````
+```
 
 ### 📊 Architecture Diagram (Brand Colors)
 
-![Polymers Node Architecture](./docs/polymers_node_architecture_brand.png)
-🔎 [High-resolution SVG version](./docs/polymers_node_architecture_brand.svg)
+![Polymers Node Architecture](./backend/docs/polymers_node_architecture_brand.png)
+🔎 [High-resolution SVG version](./backend/docs/polymers_node_architecture_brand.svg)
 
 ---
 
-## 🌍 Ecosystem Overview
+## <span style="color:#00AEEF">🌍 Ecosystem Overview</span>
 
 Polymers Node is part of a **larger DePIN + Blockchain ecosystem**, bridging IoT devices, AI validation, tokenized rewards, and DAO governance.
 
 ### 📊 Ecosystem Flow Diagram (Brand Colors)
 
-![Polymers Ecosystem Flow](./docs/polymers_ecosystem_flow_brand.png)
-🔎 [High-resolution SVG version](./docs/polymers_ecosystem_flow_brand.svg)
+![Polymers Ecosystem Flow](./backend/docs/polymers_ecosystem_flow_brand.png)
+🔎 [High-resolution SVG version](./backend/docs/polymers_ecosystem_flow_brand.svg)
 
 ---
 
-## 📁 Folder Structure
+## <span style="color:#00AEEF">📁 Folder Structure</span>
 
 ```text
 backend/
@@ -82,58 +141,13 @@ backend/
 │     ├─ constants.ts
 │     └─ types.ts
 ├─ package.json
-└─ tsconfig.json
+├─ tsconfig.json
+└─ Dockerfile
 ```
 
 ---
 
-## ⚙️ Prerequisites
-
-* Node.js **>= 18**
-* Docker & Docker Compose (for full-stack deployment)
-* Solana & SUI wallets for NFT & reward execution
-* AI model files for contamination scoring
-
----
-
-## 💻 Local Development
-
-1️⃣ Install dependencies
-
-```bash
-cd packages/backend
-npm install
-```
-
-2️⃣ Configure environment variables
-
-```bash
-cp .env.example .env
-```
-
-3️⃣ Start node locally
-
-```bash
-npm run dev
-```
-
----
-
-## 🏭 Production Deployment
-
-🚢 **Docker Compose** for full stack deployment
-
-```bash
-chmod +x ../../deploy.sh
-../../deploy.sh
-```
-
-* **Backend API:** `http://localhost:4000/api/scan`
-* **WebSocket:** `ws://localhost:4001`
-
----
-
-## 🔗 API Endpoints
+## <span style="color:#00AEEF">🔗 API Endpoints</span>
 
 | Endpoint              | Method | Description                                                                    |
 | --------------------- | ------ | ------------------------------------------------------------------------------ |
@@ -144,29 +158,29 @@ chmod +x ../../deploy.sh
 
 ---
 
-## 🧠 AI & Reward Engine
+## <span style="color:#00AEEF">🧠 AI & Reward Engine</span>
 
-📌 **Contamination Scoring** – Evaluates sensor & image data for contamination
-📌 **Dynamic Reward Formula**
+📌 **Contamination Scoring:** Evaluates sensor & image data for contamination
+📌 **Dynamic Reward Formula:**
 
 ```text
 Reward_RECO = BaseValue + ΔWeight × WeightFactor + TrustMultiplier + Bonus + DAO Bonus
 ```
 
-📌 **NFT Minting** – Solana & SUI digital twin NFTs
-📌 **ESG / CRT Issuance** – On-chain credits & tokenized rewards
+📌 **NFT Minting:** Solana & SUI digital twin NFTs
+📌 **ESG / CRT Issuance:** On-chain credits & tokenized rewards
 
 ---
 
-## ⚡ Staking & Multi-Device Orchestration
+## <span style="color:#00AEEF">⚡ Staking & Multi-Device Orchestration</span>
 
-* 🔒 **PLY Token Staking:** Dynamic rewards based on uptime & reliability
+* 🔒 **PLY Token Staking:** Rewards based on uptime & reliability
 * 📡 **Multi-Device Handling:** Batch IoT event processing
 * 🛡 **Node Status Tracking:** Health monitoring & slashing if thresholds missed
 
 ---
 
-## 📡 WebSocket Integration
+## <span style="color:#00AEEF">📡 WebSocket Integration</span>
 
 📡 **Real-Time Updates:**
 
@@ -180,9 +194,7 @@ Connect dashboards → `ws://localhost:4001`
 
 ---
 
-## 🌱 Environment Variables
-
-Example `.env`:
+## <span style="color:#00AEEF">🌱 Environment Variables</span>
 
 ```ini
 BACKEND_PORT=4000
@@ -208,20 +220,46 @@ AI_MODEL_PATH=./ai/model
 
 ---
 
-## ✅ Quick Start Recap
+## <span style="color:#00AEEF">✅ Quick Start Recap</span>
 
 1. Configure `.env` with wallets, staking parameters, AI model path
-2. Start node
+2. Start node locally:
 
 ```bash
+cd backend
 npm run dev
 ```
 
-or via full-stack Docker
+or via Docker:
 
 ```bash
-../../deploy.sh
+docker-compose up --build
 ```
 
-3. Observe **scan events, AI scoring, rewards, NFT minting, ESG updates**
-4. Dashboards auto-update in **real time via WebSocket**
+3. Observe **scan events, AI scoring, reward issuance, NFT minting, and ESG updates**
+4. Dashboards receive **real-time updates via WebSocket**
+
+---
+
+### <span style="color:#00AEEF">📄 Export PDF with Pandoc</span>
+
+```bash
+pandoc README_for_pdf.md \
+    -o Polymers_Node_Whitepaper.pdf \
+    --pdf-engine=xelatex \
+    --variable geometry:margin=1in \
+    --variable mainfont="Arial" \
+    --highlight-style=tango
+```
+
+* Use **SVG diagrams** for crisp vector quality if preferred:
+
+```markdown
+![Node Architecture](./backend/docs/polymers_node_architecture_brand.svg)
+```
+
+* Adjust page size for whitepaper:
+
+```bash
+--variable papersize:a4
+```

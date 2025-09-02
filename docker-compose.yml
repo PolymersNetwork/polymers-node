@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  polymers-backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: polymers-backend
+    ports:
+      - "4000:4000"  # API
+      - "4001:4001"  # WebSocket
+    env_file:
+      - ./backend/.env
+    volumes:
+      - ./backend/src:/usr/src/app/src
+      - ./backend/docs:/usr/src/app/docs
+    restart: unless-stopped

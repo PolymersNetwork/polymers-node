@@ -1,0 +1,52 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Polymers Node backend – IoT validator, AI scoring, rewards engine, NFT & ESG integration",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "Polymers",
+    "IoT",
+    "DePIN",
+    "validator",
+    "NFT",
+    "ESG",
+    "Solana",
+    "SUI",
+    "Supabase",
+    "Neon",
+    "Mail"
+  ],
+  "author": "Polymers Network",
+  "license": "MIT",
+  "dependencies": {
+    "@chainlink/contracts": "^1.4.0",
+    "@coral-xyz/anchor": "^0.31.1",
+    "@mysten/sui.js": "^0.54.1",
+    "@neondatabase/serverless": "^0.6.1",
+    "@pythnetwork/client": "^2.22.1",
+    "@solana/spl-token": "^0.4.13",
+    "@solana/web3.js": "^1.98.4",
+    "@supabase/supabase-js": "^2.28.0",
+    "axios": "^1.11.0",
+    "body-parser": "^2.2.0",
+    "bs58": "^6.0.0",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "fs": "0.0.1-security",
+    "nodemailer": "^6.9.4",
+    "uuid": "^11.1.0",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.0",
+    "@types/ws": "^8.18.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.2"
+  }
+}

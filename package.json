@@ -1,0 +1,15 @@
+{
+  "name": "polymers-node",
+  "version": "1.0.0",
+  "description": "![Polymers Badge](https://img.shields.io/badge/Polymers-Network-00AEEF?style=for-the-badge&logo=vercel&logoColor=white) ![Status Badge](https://img.shields.io/badge/Status-Production--Ready-28A745?style=for-the-badge&logo=github) ![License Badge](https://img.shields.io/badge/License-MIT-FFB400?style=for-the-badge) ![Blockchain Badge](https://img.shields.io/badge/Solana-Integration-9945FF?style=for-the-badge&logo=solana) ![Blockchain Badge](https://img.shields.io/badge/SUI-Integration-6FBCF0?style=for-the-badge&logo=sui)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
