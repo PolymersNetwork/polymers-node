@@ -1,6 +1,7 @@
 # 🌐 Polymers Node – IoT Validator & Reward Engine
 
-**Polymers Node** is a **production-grade DePIN / IoT validator node** for the Polymers Network.  
+**Polymers Node** is a **production-grade DePIN / IoT validator node** for the Polymers Network. 
+
 It validates recycling events, executes **AI contamination scoring**, orchestrates devices, calculates **dynamic rewards**, mints **NFTs**, issues **ESG tokens**, and integrates with **Solana & SUI blockchain programs**.
 
 ---
