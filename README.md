@@ -1,6 +1,12 @@
 # 🌐 Polymers Node – IoT Validator & Reward Engine
 
-**Polymers Node** is a **production-grade DePIN / IoT validator node** for the Polymers Network. 
+![Polymers Badge](https://img.shields.io/badge/Polymers-Network-00AEEF?style=for-the-badge&logo=vercel&logoColor=white)
+![Status Badge](https://img.shields.io/badge/Status-Production--Ready-28A745?style=for-the-badge&logo=github)
+![License Badge](https://img.shields.io/badge/License-MIT-FFB400?style=for-the-badge)
+![Blockchain Badge](https://img.shields.io/badge/Solana-Integration-9945FF?style=for-the-badge&logo=solana)
+![Blockchain Badge](https://img.shields.io/badge/SUI-Integration-6FBCF0?style=for-the-badge&logo=sui)
+
+**Polymers Node** is a **production-grade DePIN / IoT validator node** for the Polymers Network.
 
 It validates recycling events, executes **AI contamination scoring**, orchestrates devices, calculates **dynamic rewards**, mints **NFTs**, issues **ESG tokens**, and integrates with **Solana & SUI blockchain programs**.
 
@@ -38,10 +44,10 @@ IoT Smart Bins → Polymers Node
    └─ WebSocket → Dashboard / Analytics
 ````
 
-### 📊 Architecture Diagram
+### 📊 Architecture Diagram (Brand Colors)
 
-![Polymers Node Architecture](./docs/polymers_node_architecture.png)
-🔎 [High-resolution SVG version](./docs/polymers_node_architecture.svg)
+![Polymers Node Architecture](./docs/polymers_node_architecture_brand.png)
+🔎 [High-resolution SVG version](./docs/polymers_node_architecture_brand.svg)
 
 ---
 
@@ -49,14 +55,14 @@ IoT Smart Bins → Polymers Node
 
 Polymers Node is part of a **larger DePIN + Blockchain ecosystem**, bridging IoT devices, AI validation, tokenized rewards, and DAO governance.
 
-### 📊 Ecosystem Flow Diagram
+### 📊 Ecosystem Flow Diagram (Brand Colors)
 
-![Polymers Ecosystem Flow](./docs/polymers_ecosystem_flow.png)
-🔎 [High-resolution SVG version](./docs/polymers_ecosystem_flow.svg)
+![Polymers Ecosystem Flow](./docs/polymers_ecosystem_flow_brand.png)
+🔎 [High-resolution SVG version](./docs/polymers_ecosystem_flow_brand.svg)
 
 ---
 
-## 📂 Folder Structure
+## 📁 Folder Structure
 
 ```text
 packages/backend/
@@ -219,6 +225,3 @@ or via full-stack Docker
 
 3. Observe **scan events, AI scoring, rewards, NFT minting, ESG updates**
 4. Dashboards auto-update in **real time via WebSocket**
-
-Would you like me to also **apply a color theme (consistent accent colors for diagrams + README badges)** so the visuals match your branding (e.g., Polymers blue/green palette)?
-```
